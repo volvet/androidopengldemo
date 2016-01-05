@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/volvet/AndroidStudioProjects/CameraCube/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_launcher.png",
+        "source": "/Users/volvet/AndroidStudioProjects/CameraCube/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/volvet/AndroidStudioProjects/CameraCube/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/nehe.png",
+        "source": "/Users/volvet/AndroidStudioProjects/CameraCube/app/src/main/res/drawable-xhdpi/nehe.png"
+    },
+    {
+        "merged": "/Users/volvet/AndroidStudioProjects/CameraCube/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/crate.png",
+        "source": "/Users/volvet/AndroidStudioProjects/CameraCube/app/src/main/res/drawable-xhdpi/crate.png"
+    }
+]

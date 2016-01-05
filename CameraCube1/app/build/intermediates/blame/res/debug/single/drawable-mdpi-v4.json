@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/volvet/AndroidStudioProjects/CameraCube/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/crate.png",
+        "source": "/Users/volvet/AndroidStudioProjects/CameraCube/app/src/main/res/drawable-mdpi/crate.png"
+    },
+    {
+        "merged": "/Users/volvet/AndroidStudioProjects/CameraCube/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/nehe.png",
+        "source": "/Users/volvet/AndroidStudioProjects/CameraCube/app/src/main/res/drawable-mdpi/nehe.png"
+    },
+    {
+        "merged": "/Users/volvet/AndroidStudioProjects/CameraCube/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/ic_launcher.png",
+        "source": "/Users/volvet/AndroidStudioProjects/CameraCube/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    }
+]
