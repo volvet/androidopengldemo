@@ -21,6 +21,7 @@ public class ColorCube implements SurfaceTexture.OnFrameAvailableListener {
 	private ByteBuffer  mIndexBuffer;
     private FloatBuffer texBuffer;    // Buffer for texture-coords-array (NEW)
     private FloatBuffer texBufferLR;
+    private FloatBuffer texBufferTB;
 	private Camera      camera;
 	private GLSurfaceView view;
     private int[] textureIDs = new int[1];
@@ -103,6 +104,18 @@ public class ColorCube implements SurfaceTexture.OnFrameAvailableListener {
             1.0f, 0.0f,
     };
 
+    float[] texCoords_tb = {
+            0.0f,   1.0f,
+            1.0f,   1.0f,
+            0.0f,   1.0f,
+            1.0f,   1.0f,
+
+            0.0f,   0.0f,
+            1.0f,   0.0f,
+            0.0f,   0.0f,
+            1.0f,   0.0f,
+    };
+
 	public ColorCube() {
 		ByteBuffer byteBuf = ByteBuffer.allocateDirect(vertices.length * 4);
 		byteBuf.order(ByteOrder.nativeOrder());
@@ -129,8 +142,14 @@ public class ColorCube implements SurfaceTexture.OnFrameAvailableListener {
         tbb = ByteBuffer.allocateDirect(texCoords_lr.length * 4);
         tbb.order(ByteOrder.nativeOrder());
         texBufferLR = tbb.asFloatBuffer();
-        texBufferLR.put(texCoords);
+        texBufferLR.put(texCoords_lr);
         texBufferLR.position(0);
+
+        tbb = ByteBuffer.allocateDirect(texCoords_tb.length * 4);
+        tbb.order(ByteOrder.nativeOrder());
+        texBufferTB = tbb.asFloatBuffer();
+        texBufferTB.put(texCoords_tb);
+        texBufferTB.position(0);
 	}
 
     public void loadTexture(GL10 gl, GLSurfaceView view) {
@@ -189,16 +208,22 @@ public class ColorCube implements SurfaceTexture.OnFrameAvailableListener {
         //gl.glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
 
         int i = 2;
-        for( i=0;i<6;i++ ){
+        for( i=0;i<2;i++ ){
             mIndexBuffer.position(i*6);
 		    gl.glDrawElements(GL10.GL_TRIANGLES, 6, GL10.GL_UNSIGNED_BYTE, mIndexBuffer);
         }
 
-        //gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, texBufferLR);
-        //for( i=3;i<4;i++ ){
-        //    mIndexBuffer.position(i*6);
-        //    gl.glDrawElements(GL10.GL_TRIANGLES, 6, GL10.GL_UNSIGNED_BYTE, mIndexBuffer);
-        //}
+        gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, texBufferLR);
+        for( i=3;i<4;i++ ){
+            mIndexBuffer.position(i*6);
+            gl.glDrawElements(GL10.GL_TRIANGLES, 6, GL10.GL_UNSIGNED_BYTE, mIndexBuffer);
+        }
+
+        gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, texBufferTB);
+        for( i=4;i<6;i++ ){
+            mIndexBuffer.position(i*6);
+            gl.glDrawElements(GL10.GL_TRIANGLES, 6, GL10.GL_UNSIGNED_BYTE, mIndexBuffer);
+        }
 
         //gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, 4);
 

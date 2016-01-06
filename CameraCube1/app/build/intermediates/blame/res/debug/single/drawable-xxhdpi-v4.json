@@ -1,11 +1,23 @@
 [
     {
+        "merged": "/Users/volvet/AndroidStudioProjects/androidopengldemo/CameraCube1/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/nehe.png",
+        "source": "/Users/volvet/AndroidStudioProjects/androidopengldemo/CameraCube1/app/src/main/res/drawable-xxhdpi/nehe.png"
+    },
+    {
         "merged": "/Users/volvet/AndroidStudioProjects/CameraCube/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_launcher.png",
         "source": "/Users/volvet/AndroidStudioProjects/CameraCube/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/volvet/AndroidStudioProjects/CameraCube/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/nehe.png",
         "source": "/Users/volvet/AndroidStudioProjects/CameraCube/app/src/main/res/drawable-xxhdpi/nehe.png"
+    },
+    {
+        "merged": "/Users/volvet/AndroidStudioProjects/androidopengldemo/CameraCube1/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_launcher.png",
+        "source": "/Users/volvet/AndroidStudioProjects/androidopengldemo/CameraCube1/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/volvet/AndroidStudioProjects/androidopengldemo/CameraCube1/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/crate.png",
+        "source": "/Users/volvet/AndroidStudioProjects/androidopengldemo/CameraCube1/app/src/main/res/drawable-xxhdpi/crate.png"
     },
     {
         "merged": "/Users/volvet/AndroidStudioProjects/CameraCube/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/crate.png",
